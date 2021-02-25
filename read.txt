@@ -2,7 +2,8 @@ Client
 npx create-react-app slack-clone
 npm install react-router-dom
 npm install styled-components
-
+npm install @material-ui/core
+npm install @material-ui/icons
 
 
 Server
