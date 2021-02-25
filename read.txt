@@ -1,0 +1,18 @@
+Client
+npx create-react-app slack-clone
+npm install react-router-dom
+
+
+
+Server
+
+
+
+
+Technologies
+HTML
+CSS
+ReactJS
+Redux
+Styled Components
+Firebase(Database)
