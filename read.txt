@@ -37,6 +37,24 @@ create database, start in testmode, enable
 
 create a cluster
 
+
+Enable sign 
+go to firebase and go to authentication
+get started
+enable the whatever sign-in providers you want to use (in this case google)
+enable, select the email, click save
+
+
+In VSC go to firebase.js
+enable authentication
+
+Import and use auth in Login page
+
+
+Then go to users
+
+
+
 firebase login   // Sign in to Google
 firebase init    // Initiate the project
 firebase deploy  // When you're ready, deploy your web app

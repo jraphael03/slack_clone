@@ -14,6 +14,16 @@ const firebaseConfig = {
  const db = firebaseApp.firestore();           // firestore is the real time database in firebase
 
 
+ // Connecting with signin
+ const auth = firebase.auth();
+
+ // Provide whatever providers you want to use
+ const provider = new firebase.auth.GoogleAuthProvider();
+
+
+ // Export the signin
+ export { auth, provider };     // Exporting this way to export multiple items
 
  export default db;
+
 

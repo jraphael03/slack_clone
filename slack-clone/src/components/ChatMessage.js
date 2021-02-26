@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function ChatMessage() {
+function ChatMessage({ text, name, image, timestamp }) {      // Getting passed in from component Chat.js at the ChatMessage component
     return (
       <Container>
         <UserAvatar>
-          <img src="/images/img1.jpg" alt="Name" />
+          <img src={ image } alt={name} />
         </UserAvatar>
         <MessageContent>
             <Name>
-              Justin Raphael
-                <span>2/26/2020 12:35:44 AM</span>  
+              { name }
+                <span>{new Date(timestamp.toDate()).toUTCString() }</span>      {/* Convert date to string */}
             </Name>
-          <Text>How about all the code we have been learning lately!</Text>
+          <Text>{ text }</Text>
         </MessageContent>
       </Container>
     );

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 
-function Header() {
+function Header({ user, signOut }) {     // Instead of passign props we can destructure using the name of the obejcts we are passing
     return (
         <Container>
             <Main>
@@ -18,10 +18,10 @@ function Header() {
             </Main>
             <UserContainer>
                 <Name>
-                    Justin
+                    {user.name}
                 </Name>
-                <UserImage>
-                    <img src="/images/img1.jpg" alt="User"/>            {/* Image is held in the public folder */}
+                <UserImage onClick={signOut} >
+                    <img src={user.photo ? user.photo : "https://i.imgur.com/6VBx3io.png"} alt="User"/>     {/* User photo if user photo exists use user photo if not use image given */}          {/* Image is held in the public folder */}
                 </UserImage>
             </UserContainer>
         </Container>
@@ -95,6 +95,7 @@ const UserImage = styled.div`
   height: 28px;
   border: 2px solid white;
   border-radius: 3px;
+  cursor: pointer;
 
   img{
       width: 100%;
