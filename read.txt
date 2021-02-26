@@ -8,8 +8,38 @@ npm install @material-ui/icons
 
 Server
 
+npm install firebase
+npm install -g firebase-tools
 
 
+
+
+
+
+
+
+SETTING UP FIREBASE
+Firebase.com
+create a project
+web button </>
+
+[inside VSC terminal
+npm install firebase
+npm install firebase-tools]
+
+go to project settings go to config
+
+[VSC
+setup firebase.js]
+
+inside firebase.com go to cloud firestore
+create database, start in testmode, enable
+
+create a cluster
+
+firebase login   // Sign in to Google
+firebase init    // Initiate the project
+firebase deploy  // When you're ready, deploy your web app
 
 Technologies
 HTML
