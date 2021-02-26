@@ -12,10 +12,31 @@ npm install firebase
 npm install -g firebase-tools
 
 
+// starting up firebase host
+https://firebase.google.com/docs/hosting/     // Link for setting up host if there is trouble
+firebase init
 
+Hosting
 
+Use an existing project
+Slackclone
 
+What do you want to use as your public directory?
+build
 
+Configure as a single-page app?
+y
+
+set up automatic builds and deploys with github?
+N
+
+File build/index.html already exists override?
+N
+
+firebase deploy
+
+copy Hosting URL
+Paste Hosting URL in url
 
 
 SETTING UP FIREBASE
